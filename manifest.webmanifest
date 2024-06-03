@@ -1,0 +1,42 @@
+{
+    "short_name": "Virtual Pharmacist",
+    "name": "Virtual Pharmacist",
+    "description": "Virtual Pharmacist",
+    "icons": [
+      {
+        "src": "./assets/manifest/icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "./assets/manifest/icon-384x384.png",
+        "type": "image/png",
+        "sizes": "384x384"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#fff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#fff",
+    "shortcuts": [
+      {
+        "name": "Virtual Pharmacist",
+        "short_name": "Virtual Pharmacist",
+        "description": "Virtual Pharmacist",
+        "url": "/",
+        "icons": [
+            { 
+                "src": "./assets/manifest/icon-192x192.png", "sizes": "192x192" 
+            }
+        ]
+      },
+      {
+        "name": "Virtual Pharmacist",
+        "short_name": "Virtual Pharmacist",
+        "description": "Virtual Pharmacist",
+        "url": "/",
+        "icons": [{ "src": "./assets/manifest/icon-192x192.png", "sizes": "192x192" }]
+      }
+    ]
+  }
