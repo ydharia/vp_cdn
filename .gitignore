@@ -1,0 +1,67 @@
+# Defensive patterns -- never commit any of these even if the CDN
+# repository is structured to only serve static assets.
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+
+# Environment / secret files (defence in depth -- secrets do not belong
+# in a public asset CDN under any circumstances)
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+**/secrets.*
+secrets/
+credentials.json
+
+# Local agent / AI tooling that should never be committed
+.claude/
+.claude-flow/
+.claude-mem/
+.codex/
+.ruflo/
+.swarm/
+.mcp.json
+.mcp.*
+CLAUDE.md
+claude.md
+MEMORY.md
+ruvector.db
+ruvector.db-journal
+ruvector.db-wal
+ruvector.db-shm
+*.ruvector.db
+agentdb.rvf
+agentdb.rvf.lock
+
+# Build / transient (in case any future build tooling is added)
+node_modules/
+dist/
+build/
+.cache/
+coverage/
+
+# Backup files
+*.backup
+*.bak
+*.old

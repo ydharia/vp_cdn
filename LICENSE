@@ -1,0 +1,11 @@
+Copyright (c) 2024 Virtual Pharmacist Ltd. All rights reserved.
+
+This repository contains the static CDN bundle for the Virtual Pharmacist Panel
+frontend. The bundle is the proprietary property of Virtual Pharmacist Ltd.
+
+Third-party open-source libraries included in this bundle are distributed under
+their respective licences, which are documented in NOTICE.md. The presence of
+open-source components does not affect the proprietary status of the Virtual
+Pharmacist Ltd-authored portions of this bundle.
+
+For licensing enquiries: legal@virtualpharmacist.co.uk

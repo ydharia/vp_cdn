@@ -1,0 +1,27 @@
+version: 2
+
+# Dependabot does not detect a manifest in this repository (the CDN is
+# unpackaged static JS/CSS/font assets, not an npm/composer project).
+# This file is committed for two reasons:
+#
+# 1. To make explicit that the absence of automated dep updates here is
+#    intentional, not an oversight.
+# 2. To set a placeholder schedule so that if a manifest is ever added
+#    (e.g. a future build toolchain bringing in package.json), Dependabot
+#    will pick it up automatically with the labels and schedule we want.
+
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "08:00"
+      timezone: "Europe/London"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
